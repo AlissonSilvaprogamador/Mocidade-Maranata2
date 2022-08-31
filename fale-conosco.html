@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Dooffy-Characters-M1.ico" >
+    <title>Mocidade Maranata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="_css/form.css">
+    
+
+</head>
+    <script  src="_javascript/funcoes.js">  </script>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+
+        
+   <h1> Conjunto de <abbr title="Mocidade ">M</abbr>.<abbr title="Maranata">M</abbr></h1>
+    <h2>Ora, Vem Senhor Jesus</h2>
+    </hgroup>
+
+    <img id="icone" src="Imagens/Dooffy-Characters-M1.ico" alt="simbolo">
+
+    <hgroup>
+    <nav id="menu">
+    <h1>Menu Principal</h1>
+    <ul >
+        
+    <li onmouseover="mudafoto('Imagens/home.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="index.html">Home</a></li> 
+
+    <li onmouseover="mudafoto('Imagens/especificacoes.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="informações.html">Informações</a> </li> 
+
+    <li onmouseover="mudafoto('Imagens/fotos.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="fotos.html">Fotos</a> </li>
+
+        <li onmouseover="mudafoto('Imagens/multimidia.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="videos.html">Videos</a> </li> 
+
+        <li onmouseover="mudafoto('Imagens/audio.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="musicas.html">Musicas</a> </li> 
+
+        <li onmouseover="mudafoto('Imagens/contato.png')" onmouseout="mudafoto ('Imagens/contato.png')"><a href="fale-conosco.html">Fale Conosco</a> </li> 
+    </ul>
+
+</nav>
+</header>
+
+<header id="cabecalho2">
+    <hgroup>
+    <h1>Fale Conosco > Contato</h1>
+    <h2>Formulário de Contato</h2>
+    <h3>por Alisson Silva</h3>
+    <h3 class="direita">Atualizado em 01/02/2021</h3>
+    </hgroup>
+    </header>
+
+    <Form method="post" id="fContatos" action="mailto: alisson_1b@hotmail.com" oninput="calc_total();">
+<fieldset id="usuario"> <legend>Identificação do Usuário</legend> 
+    <p><label for="cNome">Nome:</label>  <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p> 
+
+    <p><label for="cSenha">Senha: </label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 digitos"></p>
+
+    <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
+
+   <fieldset id="sexo"> <legend>Sexo:</legend> 
+        <input type="radio" name="tSexo" id="cMasc" checked> 
+        <label for="cMasc">Masculino</label> 
+        <br>
+        <input type="radio" name="tSexo" id="cFem"> 
+        <label for="cFem">Feminino</label> 
+    
+    </fieldset>
+    <p><label for="cData">Data de Nascimento:</label> <input type="date" name="tData" id="cData"></p> 
+
+</fieldset>
+
+    <fieldset id="endereco"><legend>Endereço do Usuário</legend> 
+   <p><label for="cRua">Logradouro:</label>  <input type="text" name="tRua " id="cRua" size="20" maxlength="40" placeholder="Rua, Av, trave..."> </p>
+
+   <p><label for="cNumero">Número: </label><input type="number" name="tNumero " id="cNumero" min="0" max="99999"></p> 
+
+   <p><label for="">Estado:</label> <select name="tEst" id="cEst">
+    <Option value="PE">Pernambuco</Option>
+    <Option>Outros</Option>
+
+   </select> </p> 
+
+   <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidada" list="cidades"></p>  
+   <datalist id="cidades">
+       <option value="Jataúba"></option>
+
+   </datalist>
+   
+</fieldset>
+
+    <fieldset id="mensagem"><legend>Mensagem do Usuário</legend> 
+   <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="40" rows="5" placeholder="Deixe aqui sua mensagem"></textarea> </p> 
+</fieldset>
+
+<input type="image" name="tEnviar" src="_imagens/botao-enviar.png">
+
+</Form>
+
+
+<footer id="rodape">
+    <p>
+        Igreja Assembleia de Deus Ministerio Madureira
+        <p>Rua Veriador Basilio Neto / N° 18  / Cohab - Jataúba-PE</p><!-- ADDRESS = ENDEREÇO-->
+        <h5> <p>Copyright 2021 - by Alisson Silva
+            <br>
+            <a href="https://www.facebook.com/people/Alisson-Silva/100015434837394" target="blank" >Facebook</a> / <a href="https://www.instagram.com/alisson_s97/" target="blank" > Instagram </a>
+        </p></h5>
+    </p>
+</footer>
+</div>    
+</body>
+</html>
